@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,14 +63,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				corporate: {
-					blue: '#1a1a1a', // Black for primary elements (60%)
-					lightBlue: '#d4af37', // Gold for secondary elements (30%)
-					darkBlue: '#111111', // Darker black for variation (60%)
-					gray: '#f8f9fa', // Light background
-					darkGray: '#343a40', // Dark text
-					accent: '#a67c00', // Darker gold for accents (10%)
-				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -96,7 +89,7 @@ export default {
 				'fade-in': {
 					'0%': {
 						opacity: '0',
-						transform: 'translateY(10px)'
+						transform: 'translateY(20px)'
 					},
 					'100%': {
 						opacity: '1',
@@ -110,7 +103,7 @@ export default {
 					},
 					'100%': {
 						opacity: '0',
-						transform: 'translateY(10px)'
+						transform: 'translateY(20px)'
 					}
 				},
 				'scale-in': {
@@ -125,7 +118,7 @@ export default {
 				},
 				'slide-in': {
 					'0%': {
-						transform: 'translateY(20px)',
+						transform: 'translateY(30px)',
 						opacity: '0'
 					},
 					'100%': {
@@ -146,7 +139,7 @@ export default {
 						transform: 'translateY(0)'
 					},
 					'50%': {
-						transform: 'translateY(-5px)'
+						transform: 'translateY(-10px)'
 					}
 				},
 				'pulse': {
@@ -155,7 +148,7 @@ export default {
 						transform: 'scale(1)'
 					},
 					'50%': {
-						opacity: '0.85',
+						opacity: '0.8',
 						transform: 'scale(1.05)'
 					}
 				}
@@ -163,13 +156,17 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.5s ease-out',
-				'fade-out': 'fade-out 0.5s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'fade-out': 'fade-out 0.6s ease-out',
 				'scale-in': 'scale-in 0.3s ease-out',
-				'slide-in': 'slide-in 0.5s ease-out',
+				'slide-in': 'slide-in 0.6s ease-out',
 				'slide-in-right': 'slide-in-right 0.3s ease-out',
-				'float': 'float 3s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
 				'pulse': 'pulse 2s ease-in-out infinite'
+			},
+			fontFamily: {
+				'sans': ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+				'heading': ['Poppins', 'system-ui', 'sans-serif'],
 			}
 		}
 	},

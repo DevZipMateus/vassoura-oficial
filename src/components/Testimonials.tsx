@@ -1,133 +1,111 @@
 
-import React, { useState } from 'react';
-import { Star, ArrowLeft, ArrowRight } from 'lucide-react';
+import React from 'react';
+import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
     id: 1,
-    name: 'Elina Santos',
-    position: 'Diretora da BJT Transportadora',
-    content: 'A ContaPlus tem se mostrado extremamente pontual na entrega de documentos e o suporte é sempre atencioso. Recomendo a todos que procuram um serviço contábil confiável.',
+    name: 'Maria Silva',
+    location: 'Vassouras - RJ',
+    text: 'Produtos de excelente qualidade! Minha casa fica impecável e ainda economizo tempo na limpeza.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
+    delay: '0s'
   },
   {
     id: 2,
-    name: 'Joel Gomes',
-    position: 'Administrador da Torque Implementos',
-    content: 'O comprometimento da equipe da ContaPlus com a satisfação do cliente é notável. Eles sempre atendem às necessidades da nossa empresa com excelência e profissionalismo.',
+    name: 'Ana Santos',
+    location: 'Vassouras - RJ',
+    text: 'Atendimento maravilhoso e produtos que realmente funcionam. Recomendo para todas as donas de casa!',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
+    delay: '0.1s'
   },
   {
     id: 3,
-    name: 'João Meneses',
-    position: 'Diretor da Ágil Mecânica',
-    content: 'O atendimento da ContaPlus é prestativo, sempre esclarecendo nossas dúvidas. Os serviços prestados são excelentes e nos ajudam a manter nosso negócio em ordem.',
+    name: 'Carla Oliveira',
+    location: 'Vassouras - RJ',
+    text: 'A entrega é rápida e os preços são justos. Não troco por nenhuma outra empresa!',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
+    delay: '0.2s'
   }
 ];
 
 const Testimonials = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  
-  const nextTestimonial = () => {
-    setActiveIndex((prev) => (prev + 1) % testimonials.length);
+  const renderStars = (rating: number) => {
+    return Array.from({ length: 5 }, (_, index) => (
+      <Star
+        key={index}
+        className={`w-5 h-5 ${index < rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+      />
+    ));
   };
-  
-  const prevTestimonial = () => {
-    setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-  
+
   return (
-    <section className="section bg-white">
+    <section id="depoimentos" className="section bg-white">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-corporate-blue/10 text-corporate-blue font-medium px-4 py-1.5 rounded-full text-sm mb-4">
+          <div className="inline-block bg-yellow-100 text-yellow-600 font-medium px-4 py-2 rounded-full text-sm mb-6">
             Depoimentos
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             O que nossos clientes dizem
           </h2>
           <p className="text-gray-600 text-lg">
-            Conheça a experiência de quem já utiliza nossos serviços e confia em nossa expertise.
+            A satisfação dos nossos clientes é a nossa maior recompensa. 
+            Veja alguns depoimentos de quem já confia na Vassouras Nova Del Rei.
           </p>
         </div>
         
-        {/* Testimonials Carousel */}
-        <div className="max-w-4xl mx-auto relative">
-          {/* Testimonial Card */}
-          <div 
-            className="relative bg-white rounded-xl p-8 md:p-10 shadow-sm animate-fade-in"
-            key={testimonials[activeIndex].id}
-          >
-            {/* Quotation Mark */}
-            <div className="absolute -top-6 left-8 text-6xl text-corporate-blue/20">"</div>
-            
-            {/* Content */}
-            <div className="flex flex-col md:flex-row gap-8">
-              {/* Avatar */}
-              <div className="md:w-1/4 flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
-                  <img 
-                    src={testimonials[activeIndex].image} 
-                    alt={testimonials[activeIndex].name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h4 className="text-lg font-semibold text-gray-900 text-center">{testimonials[activeIndex].name}</h4>
-                <p className="text-sm text-gray-600 text-center">{testimonials[activeIndex].position}</p>
-                
-                {/* Rating */}
-                <div className="flex justify-center mt-2">
-                  {[...Array(testimonials[activeIndex].rating)].map((_, i) => (
-                    <Star key={i} className="text-yellow-400 fill-current" size={16} />
-                  ))}
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {testimonials.map((testimonial) => (
+            <div 
+              key={testimonial.id} 
+              className="bg-gray-50 rounded-xl p-8 relative animate-fade-in hover:shadow-lg transition-all duration-300"
+              style={{ animationDelay: testimonial.delay }}
+            >
+              <div className="absolute -top-4 left-8">
+                <div className="bg-red-600 p-3 rounded-full">
+                  <Quote className="text-white" size={20} />
                 </div>
               </div>
               
-              {/* Testimonial Text */}
-              <div className="md:w-3/4">
-                <p className="text-gray-600 text-lg italic mb-6">
-                  "{testimonials[activeIndex].content}"
+              <div className="pt-6">
+                <div className="flex mb-4">
+                  {renderStars(testimonial.rating)}
+                </div>
+                
+                <p className="text-gray-700 mb-6 leading-relaxed italic">
+                  "{testimonial.text}"
                 </p>
+                
+                <div className="border-t border-gray-200 pt-4">
+                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
+                  <p className="text-gray-500 text-sm">{testimonial.location}</p>
+                </div>
               </div>
             </div>
-          </div>
-          
-          {/* Navigation Buttons */}
-          <div className="flex justify-center mt-8 space-x-4">
-            <button 
-              onClick={prevTestimonial}
-              className="p-2 rounded-full bg-gray-100 hover:bg-corporate-blue/10 text-gray-600 hover:text-corporate-blue transition-colors duration-300"
-              aria-label="Previous testimonial"
+          ))}
+        </div>
+        
+        {/* CTA */}
+        <div className="mt-16 text-center">
+          <div className="bg-red-50 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Faça parte dos nossos clientes satisfeitos!
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Entre em contato conosco e descubra como podemos facilitar a limpeza da sua casa.
+            </p>
+            <a 
+              href="https://wa.me/553288871570" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg transition-all inline-flex items-center gap-3 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              <ArrowLeft size={20} />
-            </button>
-            
-            {/* Indicator Dots */}
-            <div className="flex items-center space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveIndex(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                    activeIndex === index ? 'bg-corporate-blue w-6' : 'bg-gray-300'
-                  }`}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                />
-              ))}
-            </div>
-            
-            <button 
-              onClick={nextTestimonial}
-              className="p-2 rounded-full bg-gray-100 hover:bg-corporate-blue/10 text-gray-600 hover:text-corporate-blue transition-colors duration-300"
-              aria-label="Next testimonial"
-            >
-              <ArrowRight size={20} />
-            </button>
+              <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
+              <span>Solicitar Orçamento</span>
+            </a>
           </div>
         </div>
       </div>

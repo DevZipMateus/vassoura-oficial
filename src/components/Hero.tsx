@@ -1,40 +1,66 @@
+
 import React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
+
 const Hero = () => {
   const isMobile = useIsMobile();
-  return <section className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-neutral-900 to-neutral-800 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
+
+  const scrollToContact = () => {
+    const element = document.getElementById('contato');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section id="inicio" className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-red-50 to-yellow-50 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80')] bg-cover bg-center opacity-5"></div>
       
       {/* Decorative elements */}
-      <div className="absolute top-40 right-10 w-72 h-72 bg-amber-400/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-40 right-10 w-72 h-72 bg-red-400/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>
       
       <div className="container-custom relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8 animate-fade-in">
+            <img 
+              src="/lovable-uploads/09955182-4407-4e16-9b7d-99d55ab481e0.png" 
+              alt="Vassouras Nova Del Rei - Produtos de limpeza" 
+              className="h-20 w-auto mx-auto mb-6"
+            />
+          </div>
           
-          
-          <h1 className={`${isMobile ? 'text-3xl' : 'text-4xl md:text-5xl lg:text-6xl'} font-bold text-white leading-tight mb-6 animate-fade-in`} style={{
-          animationDelay: '0.1s'
-        }}>
-            Soluções contábeis inteligentes para empresas de todos os portes
+          <h1 className={`${isMobile ? 'text-3xl' : 'text-4xl md:text-5xl lg:text-6xl'} font-bold text-gray-900 leading-tight mb-6 animate-fade-in`} style={{
+            animationDelay: '0.1s'
+          }}>
+            Sua casa limpa e organizada é a nossa prioridade
           </h1>
           
-          <p className="text-lg text-amber-200 mb-10 animate-fade-in" style={{
-          animationDelay: '0.2s'
-        }}>
-            Entre em contato conosco e solicite um orçamento para começar a usar hoje mesmo nossa contabilidade digital e eficiente.
+          <p className="text-lg text-gray-700 mb-10 animate-fade-in max-w-3xl mx-auto" style={{
+            animationDelay: '0.2s'
+          }}>
+            Trabalhamos com uma linha completa de produtos para facilitar a vida das nossas donas de casa. 
+            Qualidade, praticidade e eficiência em cada produto que oferecemos.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{
-          animationDelay: '0.3s'
-        }}>
-            <a href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2">
-              <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
-              <span>Solicitar Orçamento</span>
+            animationDelay: '0.3s'
+          }}>
+            <a 
+              href="https://wa.me/553288871570" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg transition-all flex items-center justify-center gap-3 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-6 h-6" />
+              <span>Fale Conosco no WhatsApp</span>
             </a>
-            <a href="#services" className="btn-secondary">
-              Nossos serviços
-            </a>
+            <button 
+              onClick={scrollToContact}
+              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-lg transition-all font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              Conheça Nossos Produtos
+            </button>
           </div>
         </div>
       </div>
@@ -46,6 +72,8 @@ const Hero = () => {
           </path>
         </svg>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
