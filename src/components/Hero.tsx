@@ -26,7 +26,7 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/09955182-4407-4e16-9b7d-99d55ab481e0.png" 
               alt="Vassouras Nova Del Rei - Produtos de limpeza" 
-              className="h-20 w-auto mx-auto mb-6"
+              className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto mx-auto mb-6 max-w-full object-contain"
             />
           </div>
           
