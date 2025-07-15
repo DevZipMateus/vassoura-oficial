@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <section id="inicio" className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-red-50 to-yellow-50 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80')] bg-cover bg-center opacity-5"></div>
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/015f8481-cc9e-4234-8397-ee2bb269d42a.png')] bg-cover bg-center opacity-20"></div>
       
       {/* Decorative elements */}
       <div className="absolute top-40 right-10 w-72 h-72 bg-red-400/10 rounded-full blur-3xl"></div>
