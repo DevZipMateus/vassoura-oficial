@@ -3,6 +3,17 @@ import React from 'react';
 import { Phone, Mail, MessageCircle, MapPin } from 'lucide-react';
 
 const Contact = () => {
+  const whatsappMessage = encodeURIComponent(
+    `Olá! 👋 Gostaria de conhecer mais sobre os produtos da Vassouras Nova Del Rei.
+
+Estou interessado(a) em saber mais sobre:
+• Produtos de limpeza disponíveis
+• Preços e condições
+• Formas de entrega
+
+Aguardo retorno! 😊`
+  );
+
   return (
     <section id="contato" className="section bg-white">
       <div className="container-custom">
@@ -35,7 +46,7 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">WhatsApp</h3>
               <p className="text-gray-600 mb-4">Atendimento rápido e prático</p>
               <a 
-                href="https://wa.me/553288871570" 
+                href={`https://wa.me/553288871570?text=${whatsappMessage}`}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-all font-medium w-full"
@@ -105,7 +116,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://wa.me/553288871570" 
+              href={`https://wa.me/553288871570?text=${whatsappMessage}`}
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white text-red-600 hover:bg-red-50 px-8 py-4 rounded-lg transition-all inline-flex items-center gap-3 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"

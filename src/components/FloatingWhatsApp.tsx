@@ -22,21 +22,32 @@ const FloatingWhatsApp = () => {
     setIsOpen(!isOpen);
     setIsPulsing(false); // Stop pulsing when opened
   };
+
+  const whatsappMessage = encodeURIComponent(
+    `Olá! 👋 Gostaria de conhecer mais sobre os produtos da Vassouras Nova Del Rei.
+
+Estou interessado(a) em saber mais sobre:
+• Produtos de limpeza disponíveis
+• Preços e condições
+• Formas de entrega
+
+Aguardo retorno! 😊`
+  );
   
   return (
     <div className={`fixed ${isMobile ? 'bottom-4 right-4' : 'bottom-8 right-8'} z-50`}>
       {/* Contact Tooltip */}
       <div className={`flex flex-col items-end mb-3 transition-all duration-500 ${isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
-        <div className="bg-white rounded-lg shadow-lg p-4 mb-2 max-w-xs">
-          <h4 className="font-semibold text-gray-900 mb-2">Fale Conosco!</h4>
+        <div className="bg-white rounded-lg shadow-lg p-4 mb-2 max-w-xs border border-red-100">
+          <h4 className="font-semibold text-gray-900 mb-2 text-red-600">💬 Fale Conosco!</h4>
           <p className="text-gray-600 text-sm mb-3">
-            Sua casa limpa e organizada é a nossa prioridade. Entre em contato!
+            Sua casa limpa e organizada é a nossa prioridade. Entre em contato e conheça nossa linha completa de produtos!
           </p>
           <a 
-            href="https://wa.me/553288871570?text=Olá! Gostaria de conhecer mais sobre os produtos da Vassouras Nova Del Rei." 
+            href={`https://wa.me/553288871570?text=${whatsappMessage}`}
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-all flex items-center justify-center gap-2 font-medium text-sm w-full"
+            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-all flex items-center justify-center gap-2 font-medium text-sm w-full shadow-md hover:shadow-lg"
           >
             <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-4 h-4" />
             <span>Enviar Mensagem</span>

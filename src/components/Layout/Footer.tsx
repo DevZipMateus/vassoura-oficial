@@ -1,7 +1,19 @@
+
 import React from 'react';
 import { Phone, Mail, MapPin, Heart } from 'lucide-react';
 
 const Footer = () => {
+  const whatsappMessage = encodeURIComponent(
+    `Olá! 👋 Gostaria de conhecer mais sobre os produtos da Vassouras Nova Del Rei.
+
+Estou interessado(a) em saber mais sobre:
+• Produtos de limpeza disponíveis
+• Preços e condições
+• Formas de entrega
+
+Aguardo retorno! 😊`
+  );
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container-custom py-12 md:py-16">
@@ -91,7 +103,7 @@ const Footer = () => {
             <div className="mt-8">
               <h4 className="text-lg font-semibold mb-4 text-yellow-500">Fale Conosco</h4>
               <a 
-                href="https://wa.me/553288871570" 
+                href={`https://wa.me/553288871570?text=${whatsappMessage}`}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-all inline-flex items-center gap-2 font-medium"

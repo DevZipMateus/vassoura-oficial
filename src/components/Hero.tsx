@@ -12,6 +12,17 @@ const Hero = () => {
     }
   };
 
+  const whatsappMessage = encodeURIComponent(
+    `Olá! 👋 Gostaria de conhecer mais sobre os produtos da Vassouras Nova Del Rei.
+
+Estou interessado(a) em saber mais sobre:
+• Produtos de limpeza disponíveis
+• Preços e condições
+• Formas de entrega
+
+Aguardo retorno! 😊`
+  );
+
   return (
     <section id="inicio" className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-red-50 to-yellow-50 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('/lovable-uploads/015f8481-cc9e-4234-8397-ee2bb269d42a.png')] bg-cover bg-center opacity-20"></div>
@@ -47,7 +58,7 @@ const Hero = () => {
             animationDelay: '0.3s'
           }}>
             <a 
-              href="https://wa.me/553288871570" 
+              href={`https://wa.me/553288871570?text=${whatsappMessage}`}
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg transition-all flex items-center justify-center gap-3 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
