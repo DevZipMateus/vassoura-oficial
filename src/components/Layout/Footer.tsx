@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Heart } from 'lucide-react';
 
@@ -11,7 +10,7 @@ const Footer = () => {
           <div className="animate-fade-in">
             <div className="flex items-center mb-6">
               <img 
-                src="/lovable-uploads/09955182-4407-4e16-9b7d-99d55ab481e0.png" 
+                src="/lovable-uploads/589e108c-94cd-4db9-a058-eae5a58e1c78.png" 
                 alt="Vassouras Nova Del Rei" 
                 className="h-12 w-auto mr-3 filter brightness-0 invert"
               />

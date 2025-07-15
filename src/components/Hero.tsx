@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 animate-fade-in">
             <img 
-              src="/lovable-uploads/09955182-4407-4e16-9b7d-99d55ab481e0.png" 
+              src="/lovable-uploads/589e108c-94cd-4db9-a058-eae5a58e1c78.png" 
               alt="Vassouras Nova Del Rei - Produtos de limpeza" 
               className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto mx-auto mb-6 max-w-full object-contain"
             />
