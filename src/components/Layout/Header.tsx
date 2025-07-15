@@ -37,31 +37,31 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' : 'bg-white py-4'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-2 sm:py-3' : 'bg-white py-3 sm:py-4'}`}>
       <div className="container-custom">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center px-4">
           {/* Logo */}
           <Link to="/" className="flex items-center transition-all duration-300 transform hover:scale-[1.02]">
             <img 
               src="/lovable-uploads/589e108c-94cd-4db9-a058-eae5a58e1c78.png" 
               alt="Vassouras Nova Del Rei - Produtos de limpeza" 
-              className="h-12 w-auto"
+              className="h-10 sm:h-12 w-auto"
             />
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('inicio')} className="nav-link">Início</button>
-            <button onClick={() => scrollToSection('sobre')} className="nav-link">Sobre</button>
-            <button onClick={() => scrollToSection('servicos')} className="nav-link">Serviços</button>
-            <button onClick={() => scrollToSection('depoimentos')} className="nav-link">Depoimentos</button>
-            <button onClick={() => scrollToSection('localizacao')} className="nav-link">Localização</button>
-            <button onClick={() => scrollToSection('contato')} className="nav-link">Contato</button>
+          <nav className="hidden lg:flex space-x-6 xl:space-x-8">
+            <button onClick={() => scrollToSection('inicio')} className="nav-link text-sm xl:text-base">Início</button>
+            <button onClick={() => scrollToSection('sobre')} className="nav-link text-sm xl:text-base">Sobre</button>
+            <button onClick={() => scrollToSection('servicos')} className="nav-link text-sm xl:text-base">Serviços</button>
+            <button onClick={() => scrollToSection('depoimentos')} className="nav-link text-sm xl:text-base">Depoimentos</button>
+            <button onClick={() => scrollToSection('localizacao')} className="nav-link text-sm xl:text-base">Localização</button>
+            <button onClick={() => scrollToSection('contato')} className="nav-link text-sm xl:text-base">Contato</button>
           </nav>
           
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-gray-600 hover:text-red-600 focus:outline-none transition-colors"
+            className="lg:hidden text-gray-600 hover:text-red-600 focus:outline-none transition-colors p-2"
             onClick={toggleMobileMenu}
             aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           >
@@ -71,14 +71,14 @@ const Header = () => {
       </div>
       
       {/* Mobile Navigation Menu */}
-      <div className={`md:hidden ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden transition-all duration-300 ease-in-out`}>
-        <div className="container-custom py-4 flex flex-col space-y-3 border-t bg-white/95 backdrop-blur-md">
-          <button onClick={() => scrollToSection('inicio')} className="px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors">Início</button>
-          <button onClick={() => scrollToSection('sobre')} className="px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors">Sobre</button>
-          <button onClick={() => scrollToSection('servicos')} className="px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors">Serviços</button>
-          <button onClick={() => scrollToSection('depoimentos')} className="px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors">Depoimentos</button>
-          <button onClick={() => scrollToSection('localizacao')} className="px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors">Localização</button>
-          <button onClick={() => scrollToSection('contato')} className="px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors">Contato</button>
+      <div className={`lg:hidden ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden transition-all duration-300 ease-in-out`}>
+        <div className="container-custom py-4 flex flex-col space-y-2 border-t bg-white/95 backdrop-blur-md mx-4">
+          <button onClick={() => scrollToSection('inicio')} className="px-4 py-3 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors text-base">Início</button>
+          <button onClick={() => scrollToSection('sobre')} className="px-4 py-3 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors text-base">Sobre</button>
+          <button onClick={() => scrollToSection('servicos')} className="px-4 py-3 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors text-base">Serviços</button>
+          <button onClick={() => scrollToSection('depoimentos')} className="px-4 py-3 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors text-base">Depoimentos</button>
+          <button onClick={() => scrollToSection('localizacao')} className="px-4 py-3 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors text-base">Localização</button>
+          <button onClick={() => scrollToSection('contato')} className="px-4 py-3 text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-md text-left transition-colors text-base">Contato</button>
         </div>
       </div>
     </header>

@@ -112,7 +112,7 @@
   
   /* Section styling */
   .section {
-    @apply py-16 md:py-24;
+    @apply py-12 sm:py-16 md:py-20 lg:py-24;
   }
   
   /* Container max widths */
@@ -167,5 +167,30 @@
   
   ::-webkit-scrollbar-thumb:hover {
     background: #b91c1c;
+  }
+
+  /* Responsive text utilities */
+  @media (max-width: 640px) {
+    .text-responsive-xl {
+      @apply text-2xl;
+    }
+    .text-responsive-lg {
+      @apply text-xl;
+    }
+    .text-responsive-base {
+      @apply text-sm;
+    }
+  }
+
+  @media (min-width: 641px) {
+    .text-responsive-xl {
+      @apply text-4xl;
+    }
+    .text-responsive-lg {
+      @apply text-2xl;
+    }
+    .text-responsive-base {
+      @apply text-base;
+    }
   }
 }
