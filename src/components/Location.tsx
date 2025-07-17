@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { MapPin, Clock, Phone, Navigation } from 'lucide-react';
-
 const Location = () => {
-  return (
-    <section id="localizacao" className="section bg-gray-50">
+  return <section id="localizacao" className="section bg-gray-50">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -24,21 +21,16 @@ const Location = () => {
           {/* Map */}
           <div className="animate-fade-in">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden h-96">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.8!2d-43.6627!3d-22.4053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI0JzE5LjEiUyA0M8KwMzknNDUuNyJX!5e0!3m2!1spt-BR!2sbr!4v1629834567890!5m2!1spt-BR!2sbr"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localização da Vassouras Nova Del Rei"
-              ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.8!2d-43.6627!3d-22.4053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI0JzE5LjEiUyA0M8KwMzknNDUuNyJX!5e0!3m2!1spt-BR!2sbr!4v1629834567890!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{
+              border: 0
+            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Localização da Vassouras Nova Del Rei"></iframe>
             </div>
           </div>
           
           {/* Contact Info */}
-          <div className="space-y-8 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <div className="space-y-8 animate-fade-in" style={{
+          animationDelay: '0.1s'
+        }}>
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Informações de Contato</h3>
               
@@ -73,7 +65,7 @@ const Location = () => {
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">Horário de Funcionamento</h4>
                     <div className="text-gray-600 space-y-1">
                       <p>Segunda - Sexta: 08:00 - 18:00</p>
-                      <p>Sábado: 08:00 - 16:00</p>
+                      <p>Sábado: fechado</p>
                       <p>Domingo: Fechado</p>
                     </div>
                   </div>
@@ -93,12 +85,7 @@ const Location = () => {
               </div>
               
               <div className="mt-8 pt-6 border-t border-gray-200">
-                <a 
-                  href="https://wa.me/553288871570" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition-all inline-flex items-center gap-3 font-semibold w-full justify-center"
-                >
+                <a href="https://wa.me/553288871570" target="_blank" rel="noopener noreferrer" className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition-all inline-flex items-center gap-3 font-semibold w-full justify-center">
                   <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
                   <span>Fale Conosco</span>
                 </a>
@@ -107,8 +94,6 @@ const Location = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Location;
