@@ -41,7 +41,7 @@ Aguardo retorno! 😊`
             />
           </div>
           
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6 animate-fade-in px-2" style={{
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-red-600 via-red-500 to-yellow-500 bg-clip-text text-transparent leading-tight mb-4 sm:mb-6 animate-fade-in px-2" style={{
             animationDelay: '0.1s'
           }}>
             Sua casa limpa e organizada é a nossa prioridade
