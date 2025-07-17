@@ -65,7 +65,7 @@ const Location = () => {
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">Horário de Funcionamento</h4>
                     <div className="text-gray-600 space-y-1">
                       <p>Segunda - Sexta: 08:00 - 18:00</p>
-                      <p>Sábado: fechado</p>
+                      <p>Sábado: Fechado</p>
                       <p>Domingo: Fechado</p>
                     </div>
                   </div>
