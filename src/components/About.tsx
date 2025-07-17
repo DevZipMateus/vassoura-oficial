@@ -92,7 +92,7 @@ const About = () => {
                 <img 
                   alt="Produtos de limpeza organizados - Vassouras Nova Del Rei" 
                   className="w-full h-full object-contain p-2" 
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&q=80" 
+                  src="/lovable-uploads/97b3d9c8-84ad-417c-aaba-b94e31c7fcae.png" 
                 />
               </div>
               <div className="absolute -bottom-4 sm:-bottom-6 lg:-bottom-8 -right-4 sm:-right-6 lg:-right-8 bg-white rounded-lg shadow-lg p-3 sm:p-4 lg:p-6 z-20 animate-float hidden sm:block">
