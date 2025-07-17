@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Heart } from 'lucide-react';
 
@@ -22,9 +21,9 @@ Aguardo retorno! 😊`
           <div className="animate-fade-in">
             <div className="flex items-center mb-6">
               <img 
-                src="/lovable-uploads/589e108c-94cd-4db9-a058-eae5a58e1c78.png" 
+                src="/lovable-uploads/3f670435-9a58-4039-b255-7fb03ba1cf04.png" 
                 alt="Vassouras Nova Del Rei" 
-                className="h-12 w-auto mr-3 filter brightness-0 invert"
+                className="h-12 w-auto mr-3"
               />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
