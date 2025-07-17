@@ -92,7 +92,7 @@ const About = () => {
                 <img 
                   alt="Produtos de limpeza organizados - Vassouras Nova Del Rei" 
                   className="w-full h-full object-contain p-2" 
-                  src="https://vaabpicspdbolvutnscp.supabase.co/storage/v1/object/sign/site_personalizacoes/midias/1752593068753_2_screenshot_20250715_121529_instagram.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80YTMyOTM2My1kZjM3LTRkMTAtOTliNC01NGRjNzUwNWQ4NWMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaXRlX3BlcnNvbmFsaXphY29lcy9taWRpYXMvMTc1MjU5MzA2ODc1M18yX3NjcmVlbnNob3RfMjAyNTA3MTVfMTIxNTI5X2luc3RhZ3JhbS5qcGciLCJpYXQiOjE3NTI2MDM1MDEsImV4cCI6MTc1MjYwNzEwMX0.6q60Er60Xc0fAuq-0Z4E7LcH3LpZOnwwJE7FKnjqDcg" 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&q=80" 
                 />
               </div>
               <div className="absolute -bottom-4 sm:-bottom-6 lg:-bottom-8 -right-4 sm:-right-6 lg:-right-8 bg-white rounded-lg shadow-lg p-3 sm:p-4 lg:p-6 z-20 animate-float hidden sm:block">
