@@ -55,7 +55,7 @@ Aguardo retorno! 😊`
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 flex-shrink-0 text-red-500" size={18} />
                 <span className="text-gray-300">
-                  Rua Conceição de Carvalho, 385<br />Vassouras - RJ
+                  Rua Conceição de Carvalho, 385<br />São João Del Rei - Minas Gerais
                 </span>
               </li>
             </ul>
