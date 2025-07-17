@@ -99,7 +99,7 @@ Aguardo retorno! 😊`
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Endereço</h3>
               <p className="text-gray-600 mb-4">Venha nos visitar</p>
               <p className="text-gray-700 font-medium text-sm">
-                Rua Conceição de Carvalho, 385<br />Vassouras - RJ
+                Rua Conceição de Carvalho, 385<br />São João Del Rei - Minas Gerais
               </p>
             </div>
           </div>

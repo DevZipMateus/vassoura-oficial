@@ -12,7 +12,7 @@ const Location = () => {
             Venha nos visitar
           </h2>
           <p className="text-gray-600 text-lg">
-            Estamos localizados no coração de Vassouras. Visite nossa loja e conheça 
+            Estamos localizados no coração de São João Del Rei. Visite nossa loja e conheça 
             pessoalmente nossos produtos de qualidade.
           </p>
         </div>
@@ -41,7 +41,7 @@ const Location = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">Endereço</h4>
-                    <p className="text-gray-600">Rua Conceição de Carvalho, 385<br />Vassouras - RJ</p>
+                    <p className="text-gray-600">Rua Conceição de Carvalho, 385<br />São João Del Rei - Minas Gerais</p>
                   </div>
                 </div>
                 
@@ -78,7 +78,7 @@ const Location = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">Como Chegar</h4>
                     <p className="text-gray-600">
-                      Localizada no centro de Vassouras, próximo aos principais pontos comerciais da cidade.
+                      Localizada no centro de São João Del Rei, próximo aos principais pontos comerciais da cidade.
                     </p>
                   </div>
                 </div>
