@@ -43,7 +43,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center transition-all duration-300 transform hover:scale-[1.02]">
             <img 
-              src="/lovable-uploads/3f670435-9a58-4039-b255-7fb03ba1cf04.png" 
+              src="/lovable-uploads/42c5aae0-8b37-40f4-bf6e-c026337eca9a.png" 
               alt="Vassouras Nova Del Rei - Produtos de limpeza" 
               className="h-10 sm:h-12 w-auto"
             />

@@ -21,7 +21,7 @@ Aguardo retorno! 😊`
           <div className="animate-fade-in">
             <div className="flex items-center mb-6">
               <img 
-                src="/lovable-uploads/3f670435-9a58-4039-b255-7fb03ba1cf04.png" 
+                src="/lovable-uploads/42c5aae0-8b37-40f4-bf6e-c026337eca9a.png" 
                 alt="Vassouras Nova Del Rei" 
                 className="h-12 w-auto mr-3"
               />

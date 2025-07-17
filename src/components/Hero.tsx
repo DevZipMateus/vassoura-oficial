@@ -35,7 +35,7 @@ Aguardo retorno! 😊`
         <div className="max-w-5xl mx-auto text-center px-4 sm:px-6">
           <div className="mb-6 sm:mb-8 animate-fade-in">
             <img 
-              src="/lovable-uploads/3f670435-9a58-4039-b255-7fb03ba1cf04.png" 
+              src="/lovable-uploads/42c5aae0-8b37-40f4-bf6e-c026337eca9a.png" 
               alt="Vassouras Nova Del Rei - Produtos de limpeza" 
               className="h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-auto mx-auto mb-4 sm:mb-6 max-w-full object-contain"
             />
