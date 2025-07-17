@@ -1,7 +1,9 @@
 import React from 'react';
 import { MapPin, Clock, Phone, Navigation } from 'lucide-react';
+
 const Location = () => {
-  return <section id="localizacao" className="section bg-gray-50">
+  return (
+    <section id="localizacao" className="section bg-gray-50">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -21,16 +23,21 @@ const Location = () => {
           {/* Map */}
           <div className="animate-fade-in">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden h-96">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.8!2d-43.6627!3d-22.4053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI0JzE5LjEiUyA0M8KwMzknNDUuNyJX!5e0!3m2!1spt-BR!2sbr!4v1629834567890!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{
-              border: 0
-            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Localização da Vassouras Nova Del Rei"></iframe>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.234567890123!2d-44.2616789!3d-21.1361111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9977b1a1a1a1a1a1%3A0x1a1a1a1a1a1a1a1a!2sR.%20Concei%C3%A7%C3%A3o%20de%20Carvalho%2C%20385%20-%20S%C3%A3o%20Francisco%20(Col%C3%B4nia%20do%20Mar%C3%A7al)%2C%20S%C3%A3o%20Jo%C3%A3o%20del%20Rei%20-%20MG%2C%2036314-899!5e0!3m2!1spt-BR!2sbr!4v1640995200000!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade" 
+                title="Localização da Vassouras Nova Del Rei"
+              />
             </div>
           </div>
           
           {/* Contact Info */}
-          <div className="space-y-8 animate-fade-in" style={{
-          animationDelay: '0.1s'
-        }}>
+          <div className="space-y-8 animate-fade-in" style={{ animationDelay: '0.1s' }}>
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Informações de Contato</h3>
               
@@ -41,7 +48,11 @@ const Location = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">Endereço</h4>
-                    <p className="text-gray-600">Rua Conceição de Carvalho, 385<br />São João Del Rei - Minas Gerais</p>
+                    <p className="text-gray-600">
+                      R. Conceição de Carvalho, 385<br />
+                      São Francisco (Colônia do Marçal)<br />
+                      São João del Rei - MG, 36314-899
+                    </p>
                   </div>
                 </div>
                 
@@ -78,7 +89,7 @@ const Location = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">Como Chegar</h4>
                     <p className="text-gray-600">
-                      Localizada no centro de São João Del Rei, próximo aos principais pontos comerciais da cidade.
+                      Localizada no bairro São Francisco (Colônia do Marçal), em São João del Rei, próximo aos principais pontos comerciais da cidade.
                     </p>
                   </div>
                 </div>
@@ -94,6 +105,8 @@ const Location = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Location;
