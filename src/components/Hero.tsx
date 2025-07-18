@@ -37,7 +37,7 @@ Aguardo retorno! 😊`
             <img 
               src="/lovable-uploads/42c5aae0-8b37-40f4-bf6e-c026337eca9a.png" 
               alt="Vassouras Nova Del Rei - Produtos de limpeza" 
-              className="h-16 sm:h-20 md:h-24 lg:h-32 xl:h-36 2xl:h-40 w-auto mx-auto mb-4 sm:mb-6 max-w-full object-contain"
+              className="h-24 sm:h-32 md:h-40 lg:h-48 xl:h-56 2xl:h-64 w-auto mx-auto mb-4 sm:mb-6 max-w-full object-contain"
             />
           </div>
           
