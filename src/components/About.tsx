@@ -90,9 +90,9 @@ const About = () => {
               <div className="bg-red-200/50 w-full h-full absolute -left-3 sm:-left-4 lg:-left-6 -top-3 sm:-top-4 lg:-top-6 rounded-lg"></div>
               <div className="relative z-10 aspect-[4/3] rounded-lg shadow-lg overflow-hidden bg-gray-100">
                 <img 
-                  alt="Produtos de limpeza organizados - Vassouras Nova Del Rei" 
-                  className="w-full h-full object-contain p-2" 
-                  src="/lovable-uploads/97b3d9c8-84ad-417c-aaba-b94e31c7fcae.png" 
+                  alt="Vassoura Nova Del Rei - Produtos de limpeza de qualidade" 
+                  className="w-full h-full object-cover" 
+                  src="/lovable-uploads/2c3a5bc7-1341-435b-9467-f14fbccec854.png" 
                 />
               </div>
               <div className="absolute -bottom-4 sm:-bottom-6 lg:-bottom-8 -right-4 sm:-right-6 lg:-right-8 bg-white rounded-lg shadow-lg p-3 sm:p-4 lg:p-6 z-20 animate-float hidden sm:block">
